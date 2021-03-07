@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		649EB21E25F50C7B0091B97F /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649EB21D25F50C7B0091B97F /* SearchBarView.swift */; };
 		64B9590625F48CBB004F687A /* ImitationOfSomethingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9590525F48CBB004F687A /* ImitationOfSomethingApp.swift */; };
 		64B9590A25F48CBC004F687A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64B9590925F48CBC004F687A /* Assets.xcassets */; };
 		64B9590D25F48CBC004F687A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64B9590C25F48CBC004F687A /* Preview Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		649EB21D25F50C7B0091B97F /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		64B9590225F48CBB004F687A /* ImitationOfSomething.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImitationOfSomething.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64B9590525F48CBB004F687A /* ImitationOfSomethingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImitationOfSomethingApp.swift; sourceTree = "<group>"; };
 		64B9590925F48CBC004F687A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				64B9593125F49890004F687A /* SearchView.swift */,
+				649EB21D25F50C7B0091B97F /* SearchBarView.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				649EB21E25F50C7B0091B97F /* SearchBarView.swift in Sources */,
 				64B9593225F49890004F687A /* SearchView.swift in Sources */,
 				64B9592F25F49830004F687A /* FeedView.swift in Sources */,
 				64B9593F25F49C06004F687A /* ContentView.swift in Sources */,
