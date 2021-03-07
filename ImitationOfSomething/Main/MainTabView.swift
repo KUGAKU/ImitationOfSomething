@@ -28,6 +28,8 @@ struct MainTabView: View {
                     Image(systemName: "person")
                 }
         }
+        .accentColor(.green)
+        .foregroundColor(.gray)
     }
 }
 
