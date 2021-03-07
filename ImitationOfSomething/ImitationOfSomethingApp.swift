@@ -1,9 +1,5 @@
-//
-//  ImitationOfSomethingApp.swift
-//  ImitationOfSomething
-//
-//  Created by 山本学 on 2021/03/07.
-//
+// rootの役割を果たす
+// アプリが立ち上がった際に一番最初に呼ばれるファイル
 
 import SwiftUI
 

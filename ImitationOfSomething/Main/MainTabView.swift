@@ -2,7 +2,17 @@ import SwiftUI
 
 struct MainTabView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView {
+            FeedView()
+            
+            SearchView()
+            
+            UploadPostView()
+            
+            NotificationView()
+            
+            ProfileView()
+        }
     }
 }
 

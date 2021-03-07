@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		64B9590625F48CBB004F687A /* ImitationOfSomethingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9590525F48CBB004F687A /* ImitationOfSomethingApp.swift */; };
-		64B9590825F48CBB004F687A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9590725F48CBB004F687A /* ContentView.swift */; };
 		64B9590A25F48CBC004F687A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64B9590925F48CBC004F687A /* Assets.xcassets */; };
 		64B9590D25F48CBC004F687A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64B9590C25F48CBC004F687A /* Preview Assets.xcassets */; };
 		64B9592B25F497B7004F687A /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9592A25F497B7004F687A /* MainTabView.swift */; };
@@ -17,12 +16,12 @@
 		64B9593525F498A8004F687A /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9593425F498A8004F687A /* NotificationView.swift */; };
 		64B9593825F498BB004F687A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9593725F498BB004F687A /* ProfileView.swift */; };
 		64B9593B25F498E8004F687A /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9593A25F498E8004F687A /* UploadPostView.swift */; };
+		64B9593F25F49C06004F687A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9593E25F49C06004F687A /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		64B9590225F48CBB004F687A /* ImitationOfSomething.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImitationOfSomething.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64B9590525F48CBB004F687A /* ImitationOfSomethingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImitationOfSomethingApp.swift; sourceTree = "<group>"; };
-		64B9590725F48CBB004F687A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		64B9590925F48CBC004F687A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64B9590C25F48CBC004F687A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		64B9590E25F48CBC004F687A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -32,6 +31,7 @@
 		64B9593425F498A8004F687A /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		64B9593725F498BB004F687A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		64B9593A25F498E8004F687A /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
+		64B9593E25F49C06004F687A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,8 +125,8 @@
 		64B9591B25F494A7004F687A /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				64B9590725F48CBB004F687A /* ContentView.swift */,
 				64B9592A25F497B7004F687A /* MainTabView.swift */,
+				64B9593E25F49C06004F687A /* ContentView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -302,7 +302,7 @@
 			files = (
 				64B9593225F49890004F687A /* SearchView.swift in Sources */,
 				64B9592F25F49830004F687A /* FeedView.swift in Sources */,
-				64B9590825F48CBB004F687A /* ContentView.swift in Sources */,
+				64B9593F25F49C06004F687A /* ContentView.swift in Sources */,
 				64B9590625F48CBB004F687A /* ImitationOfSomethingApp.swift in Sources */,
 				64B9592B25F497B7004F687A /* MainTabView.swift in Sources */,
 				64B9593B25F498E8004F687A /* UploadPostView.swift in Sources */,
