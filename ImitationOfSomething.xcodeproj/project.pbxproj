@@ -17,6 +17,7 @@
 		64B9593825F498BB004F687A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9593725F498BB004F687A /* ProfileView.swift */; };
 		64B9593B25F498E8004F687A /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9593A25F498E8004F687A /* UploadPostView.swift */; };
 		64B9593F25F49C06004F687A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9593E25F49C06004F687A /* ContentView.swift */; };
+		64B9594425F4AD0F004F687A /* FeedCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9594325F4AD0F004F687A /* FeedCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		64B9593725F498BB004F687A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		64B9593A25F498E8004F687A /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
 		64B9593E25F49C06004F687A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		64B9594325F4AD0F004F687A /* FeedCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				64B9592E25F49830004F687A /* FeedView.swift */,
+				64B9594325F4AD0F004F687A /* FeedCellView.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				64B9590625F48CBB004F687A /* ImitationOfSomethingApp.swift in Sources */,
 				64B9592B25F497B7004F687A /* MainTabView.swift in Sources */,
 				64B9593B25F498E8004F687A /* UploadPostView.swift in Sources */,
+				64B9594425F4AD0F004F687A /* FeedCellView.swift in Sources */,
 				64B9593825F498BB004F687A /* ProfileView.swift in Sources */,
 				64B9593525F498A8004F687A /* NotificationView.swift in Sources */,
 			);
