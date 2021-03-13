@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		649EB21E25F50C7B0091B97F /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649EB21D25F50C7B0091B97F /* SearchBarView.swift */; };
 		649EB22325F5D04C0091B97F /* PostGridViewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649EB22225F5D04C0091B97F /* PostGridViewView.swift */; };
+		64B056F425FD131800C6946D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B056F325FD131800C6946D /* Extensions.swift */; };
+		64B056F725FD13E100C6946D /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B056F625FD13E100C6946D /* NotificationCell.swift */; };
 		64B08A9125F5E0F10067B5F8 /* UserCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B08A9025F5E0F10067B5F8 /* UserCellView.swift */; };
 		64B08A9425F5E10B0067B5F8 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B08A9325F5E10B0067B5F8 /* UserListView.swift */; };
 		64B9590625F48CBB004F687A /* ImitationOfSomethingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9590525F48CBB004F687A /* ImitationOfSomethingApp.swift */; };
@@ -27,6 +29,8 @@
 /* Begin PBXFileReference section */
 		649EB21D25F50C7B0091B97F /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		649EB22225F5D04C0091B97F /* PostGridViewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridViewView.swift; sourceTree = "<group>"; };
+		64B056F325FD131800C6946D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		64B056F625FD13E100C6946D /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 		64B08A9025F5E0F10067B5F8 /* UserCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellView.swift; sourceTree = "<group>"; };
 		64B08A9325F5E10B0067B5F8 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
 		64B9590225F48CBB004F687A /* ImitationOfSomething.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImitationOfSomething.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +102,7 @@
 		64B9591525F48D05004F687A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				64B056F325FD131800C6946D /* Extensions.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				64B9593425F498A8004F687A /* NotificationView.swift */,
+				64B056F625FD13E100C6946D /* NotificationCell.swift */,
 			);
 			name = Notification;
 			sourceTree = "<group>";
@@ -328,6 +334,8 @@
 				64B9593825F498BB004F687A /* ProfileView.swift in Sources */,
 				64B9593525F498A8004F687A /* NotificationView.swift in Sources */,
 				64B08A9425F5E10B0067B5F8 /* UserListView.swift in Sources */,
+				64B056F725FD13E100C6946D /* NotificationCell.swift in Sources */,
+				64B056F425FD131800C6946D /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
