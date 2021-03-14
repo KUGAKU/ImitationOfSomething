@@ -9,16 +9,18 @@ import SwiftUI
 
 struct UploadPostView: View {
     
-    @State var isTaped: Bool = false
+    @State var selectedImage: UIImage?
+    @State var postImage: Image?
     @State var captionText: String = ""
+    @State var imagePickerPresented = false
     
     var body: some View {
         GeometryReader { geometry in
             ZStack {
-                if (isTaped) {
+                if (postImage != nil) {
                     VStack {
                         HStack(alignment: .top) {
-                            Image("Joker")
+                            postImage?
                                 .resizable()
                                 .scaledToFill()
                                 .frame(width: 96, height: 96)
@@ -41,7 +43,7 @@ struct UploadPostView: View {
                     HStack {
                         Spacer()
                         Button(action: {
-                            isTaped = true
+                            imagePickerPresented.toggle()
                         }, label: {
                                 Text("Upload")
                                     .font(.system(size: 16, weight: .semibold))
@@ -49,7 +51,9 @@ struct UploadPostView: View {
                                     .background(Color.blue)
                                     .foregroundColor(.white)
                                     .cornerRadius(5.0)
-                            })
+                        }).sheet(isPresented: $imagePickerPresented, onDismiss: loadImage, content: {
+                            ImagePicker(image: $selectedImage)
+                        })
                         .background(Color(.systemBlue))
                         .foregroundColor(.white)
                         .cornerRadius(8.0)
@@ -59,6 +63,15 @@ struct UploadPostView: View {
             }
         }
         .padding(.top, 16.0)
+    }
+}
+
+extension UploadPostView {
+    func loadImage() {
+        guard let selectedImage = selectedImage else {
+            return
+        }
+      postImage = Image(uiImage: selectedImage)
     }
 }
 
