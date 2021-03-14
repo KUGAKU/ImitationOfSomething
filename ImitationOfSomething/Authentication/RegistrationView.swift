@@ -13,6 +13,9 @@ struct RegistrationView: View {
     @State private var username = ""
     @State private var fullname = ""
     @State private var password = ""
+    @State private var selectedImage: UIImage?
+    @State private var image: Image?
+    @State var imagePickerPresented = false
     @Environment(\.presentationMode) var mode
     
     var body: some View {
@@ -21,10 +24,26 @@ struct RegistrationView: View {
                     .ignoresSafeArea()
                 
                 VStack {
-                  Text("Instagram Clone")
-                    .frame(width: 200, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
-                    .foregroundColor(.white)
-                    .font(.title)
+                    if let image = image {
+                        image
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 140, height: 140)
+                            .clipShape(Circle())
+                    } else {
+                        Button(action: { imagePickerPresented.toggle() }, label:  {
+                            Image("Plus")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 80, height: 80)
+                                .clipped()
+                                .cornerRadius(18)
+                        })
+                        .sheet(isPresented: $imagePickerPresented, onDismiss: loadImage, content: {
+                                    ImagePicker(image: $selectedImage)
+                        })
+                    }
+                    
                     
                     VStack(spacing: 20) {
                         CustomeTextField(text: $email, placeholder: Text("Email"), imageName: "envelope")
@@ -91,7 +110,15 @@ struct RegistrationView: View {
                     })
                 }
             }
-            .padding(.top, -30)
+        }
+}
+    
+    extension RegistrationView {
+        func loadImage() {
+            guard let selectedImage = selectedImage else {
+                return
+            }
+            image = Image(uiImage: selectedImage)
         }
     }
 
