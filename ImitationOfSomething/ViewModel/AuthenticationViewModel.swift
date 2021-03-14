@@ -22,19 +22,35 @@ class AuthentiocationViewModel: ObservableObject {
         print("Login")
     }
     
-    func register(withEmail email: String, password: String) {
-        Auth.auth().createUser(withEmail: email, password: password, completion: { result, error in
-            if let error = error {
-                print(error.localizedDescription)
-                return
-            }
-            
-            guard let user = result?.user else {
-                return
-            }
-            self.userSession = user
-            print("Successfully registerd user...")
-        })
+    func register(withEmail email: String, password: String, image: UIImage?, fullname: String, username: String) {
+        guard let image = image else { return }
+        ImageUploader.uploadImage(image: image) { imageUrl in
+            Auth.auth().createUser(withEmail: email, password: password, completion: { result, error in
+                if let error = error {
+                    print(error.localizedDescription)
+                    return
+                }
+                
+                guard let user = result?.user else {
+                    return
+                }
+                self.userSession = user
+                print("Successfully registerd user...\(user.uid)")
+                
+                let data = ["email": email,
+                            "username": username,
+                            "fullname": fullname,
+                            "profileImageUrl": imageUrl,
+                            "uid": user.uid]
+                
+                print("data:\(data)")
+                
+                Firestore.firestore().collection("users").document(user.uid).setData(data) { _ in
+                    print("Successfully upload user data...")
+                    self.userSession = user
+                }
+            })
+        }
     }
     
     func sigout() {

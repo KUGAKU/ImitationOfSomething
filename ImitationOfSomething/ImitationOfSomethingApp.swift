@@ -3,6 +3,7 @@
 
 import SwiftUI
 import Firebase
+import FirebaseFirestoreTarget
 
 @main
 struct ImitationOfSomethingApp: App {
