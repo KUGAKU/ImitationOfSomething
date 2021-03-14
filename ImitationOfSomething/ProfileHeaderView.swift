@@ -19,13 +19,11 @@ struct ProfileHeaderView: View {
                     .padding(.leading)
                 Spacer()
                 
-                UserStatView()
-                    .padding(.trailing)
-                UserStatView()
-                    .padding(.trailing)
-                UserStatView()
-                    .padding(.trailing)
+                UserStatView(value: 3, title: "Posts")
+                UserStatView(value: 2, title: "Followers")
+                UserStatView(value: 1, title: "Following")
             }
+            
             
             Text("Joker")
                 .padding([.leading, .top])
@@ -37,30 +35,10 @@ struct ProfileHeaderView: View {
             
             HStack {
                 Spacer()
-                Button(action: {}, label: {
-                    Text("Edit Profile")
-                        .font(.system(size: 14, weight: .semibold))
-                        .frame(width: 360, height: 32)
-                        .foregroundColor(.black)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 3)
-                                .stroke(Color.gray, lineWidth: 1)
-                        )
-                })
+                ProfileActionButtonView()
                 Spacer()
             }
             .padding(.top)
-        }
-    }
-}
-
-struct UserStatView: View {
-    var body: some View {
-        VStack {
-            Text("2")
-                .font(.system(size: 15, weight: .semibold))
-            Text("Followers")
-                .font(.system(size: 15, weight: .regular))
         }
     }
 }
