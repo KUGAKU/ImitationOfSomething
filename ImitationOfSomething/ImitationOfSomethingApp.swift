@@ -14,7 +14,7 @@ struct ImitationOfSomethingApp: App {
     var body: some Scene {
         WindowGroup {
             //ContentView()
-            LoginView()
+            LoginView().environmentObject(AuthentiocationViewModel())
         }
     }
 }
