@@ -12,6 +12,8 @@ class AuthentiocationViewModel: ObservableObject {
     
     @Published var userSession: FirebaseAuth.User?
     
+    static let shared = AuthentiocationViewModel()
+    
     init() {
         userSession = Auth.auth().currentUser
     }
@@ -36,7 +38,8 @@ class AuthentiocationViewModel: ObservableObject {
     }
     
     func sigout() {
-        print("Signout")
+        self.userSession = nil
+        try? Auth.auth().signOut()
     }
     
     func resetPassword() {

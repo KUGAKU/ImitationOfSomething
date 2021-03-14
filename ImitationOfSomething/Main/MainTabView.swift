@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct MainTabView: View {
+    
     var body: some View {
         NavigationView {
             TabView {
@@ -33,7 +34,16 @@ struct MainTabView: View {
             .foregroundColor(.gray)
             .navigationTitle("Home")
             .navigationBarTitleDisplayMode(.inline)
+            .navigationBarItems(leading: logoutButton)
             .accentColor(.gray)
+        }
+    }
+    
+    var logoutButton: some View {
+        Button {
+            AuthentiocationViewModel.shared.sigout()
+        } label: {
+            Text("logout").foregroundColor(.white)
         }
     }
 }
