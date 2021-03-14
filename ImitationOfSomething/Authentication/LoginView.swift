@@ -58,7 +58,7 @@ struct LoginView: View {
                     //sign in
                     
                     Button(action: {}, label: {
-                        Text("Sign iIn")
+                        Text("Sign In")
                             .font(.headline)
                             .foregroundColor(.white)
                             .frame(width: 310, height: 50)
@@ -69,20 +69,22 @@ struct LoginView: View {
                     
                     Spacer()
                     
-                    //got to sign in
-                    Button(action: {}, label: {
-                        HStack {
-                            Text("Don't have an account?")
-                                .font(.system(size: 14))
-                            
-                            Text("Sign Up")
-                                .font(.system(size: 14, weight: .semibold))
-                        }.foregroundColor(.white)
-                    })
-                    .padding(.bottom, 32)
-                    
+                    NavigationLink(
+                        destination:
+                            RegistrationView()
+                            .navigationBarHidden(true),
+                        label: {
+                            HStack {
+                                Text("Don't have an account?")
+                                    .font(.system(size: 14))
+                                
+                                Text("Sign Up")
+                                    .font(.system(size: 14, weight: .semibold))
+                            }.foregroundColor(.white)
+                        })
                 }
             }
+            .padding(.top, -44)
         }
     }
 }
