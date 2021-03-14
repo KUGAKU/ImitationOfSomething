@@ -10,6 +10,12 @@ import Firebase
 
 class AuthentiocationViewModel: ObservableObject {
     
+    @Published var userSession: FirebaseAuth.User?
+    
+    init() {
+        userSession = Auth.auth().currentUser
+    }
+    
     func login() {
         print("Login")
     }
